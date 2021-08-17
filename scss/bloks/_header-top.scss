@@ -1,0 +1,113 @@
+.header-top {
+  @media only screen and (max-width: 574px) {
+    display: none;
+  }
+}
+
+.header-top .container {
+}
+
+.header-top__wrapper {
+  width: 100%;
+  max-width: 1130px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  padding: 12px 0;
+
+  @media only screen and (max-width: 1106px) {
+    flex-direction: column;
+  }
+}
+
+.header-top__adress {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: #333333;
+
+  &:before {
+    display: inline-block;
+    width: 14px;
+    height: 13px;
+    margin-right: 9px;
+    background-image: url(../images/header-top/house.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+  }
+}
+
+.header-top__phone-list {
+  @include reset-list;
+  display: flex;
+}
+
+.header-top__phone-item {
+  margin-left: 22px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
+}
+
+.main-phone {
+  display: flex;
+  align-items: center;
+  &::before {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin-right: 9px;
+    background-image: url(../images/header-top/phone.svg);
+    background-repeat: no-repeat;
+    content: "";
+  }
+}
+
+.second-phone {
+  display: flex;
+  align-items: center;
+  &::before {
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    margin-right: 9px;
+    background-color: $main-color;
+    border-radius: 50%;
+    content: "";
+  }
+}
+
+.header-top__date-list {
+  @include reset-list;
+  display: flex;
+  align-items: center;
+  &::before {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 7px;
+    background-image: url(../images/header-top/calendar.svg);
+    background-repeat: no-repeat;
+    content: "";
+  }
+}
+
+.header-top__date-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: #333333;
+}
+
+.header-top__date-item + .header-top__date-item {
+  margin-left: 17px;
+}
