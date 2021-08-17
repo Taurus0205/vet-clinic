@@ -10,7 +10,8 @@
         "../scss/_container.scss",
         "../scss/_mixins.scss",
         "../scss/bloks/_blocks.scss",
-        "../scss/bloks/_header-top.scss"
+        "../scss/bloks/_header-top.scss",
+        "../scss/bloks/_header-bottom.scss"
     ],
     "names": [],
     "file": "main.min.css"
