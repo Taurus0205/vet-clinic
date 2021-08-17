@@ -40,6 +40,7 @@
         <div class="container">
           <div class="header-bottom-wrapper">
             <img
+              class="header-bottom__logo"
               src="./images/logo.svg"
               alt="a logo of the site where it says vet"
               width="177"
@@ -48,16 +49,30 @@
 
             <nav class="nav">
               <ul class="nav__list">
-                <li class="nav__item">Главная</li>
-                <li class="nav__item">О Клинике</li>
-                <li class="nav__item">Наши Услуги</li>
-                <li class="nav__item">Полезные Статьи</li>
-                <li class="nav__item">FAQ</li>
-                <li class="nav__item">Контакты</li>
+                <li class="nav__item">
+                  <a class="nav__link nav--active" href="./index.html"
+                    >Главная</a
+                  >
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="./about">О Клинике</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="./services">Наши Услуги</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="./useful">Полезные Статьи</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="./faq">FAQ</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="./contacts">Контакты</a>
+                </li>
               </ul>
             </nav>
 
-            <p class="header-bottom__paragraph">Задать вопрос</p>
+            <a class="header-bottom__link" href="#">Задать вопрос</a>
           </div>
         </div>
       </div>
