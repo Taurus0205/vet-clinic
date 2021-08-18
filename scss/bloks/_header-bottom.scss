@@ -1,13 +1,17 @@
 .header-bottom {
-  background-color: white;
-}
-.container {
-}
-.header-bottom-wrapper {
+  margin-top: 20px;
   position: relative;
   z-index: 1;
+  background-color: white;
+}
+.header-bottom .container {
+}
+
+.header-bottom-inner {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  height: 60px;
 }
 
 .header-bottom__logo {
@@ -17,7 +21,9 @@
 }
 
 .nav {
-  margin-left: auto;
+  @media only screen and (max-width: 980px) {
+    display: none;
+  }
 }
 .nav__list {
   @include reset-list;
@@ -28,6 +34,9 @@
 .nav__item {
   padding: 20px 0;
   margin-left: 55px;
+  @media only screen and (max-width: 1190px) {
+    margin-left: 30px;
+  }
 }
 
 .nav__link {
@@ -62,12 +71,20 @@
 .header-bottom__link {
   position: relative;
   z-index: 1;
-  margin-left: auto;
+  margin-left: 150px;
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
   text-decoration: none;
   color: #333;
+  @include hover;
+  @media only screen and (max-width: 980px) {
+    display: none;
+  }
+
+  @media only screen and (max-width: 1190px) {
+    margin-left: 70px;
+  }
   &::before {
     display: inline-block;
     position: absolute;
@@ -79,4 +96,20 @@
     background-size: contain;
     content: "";
   }
+}
+
+// hamburger
+.hamburger-btn {
+  display: none;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  @media only screen and (max-width: 980px) {
+    display: block;
+  }
+}
+.hamburger-icon {
+}
+.exit-icon {
+  display: none;
 }

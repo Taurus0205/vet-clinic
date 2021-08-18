@@ -29,6 +29,7 @@
   line-height: 18px;
   display: flex;
   align-items: center;
+  @include hover;
 
   &:before {
     display: inline-block;
@@ -53,6 +54,7 @@
   font-size: 14px;
   line-height: 18px;
   color: #333333;
+  @include hover;
 }
 
 .main-phone {
@@ -105,6 +107,7 @@
   display: flex;
   align-items: center;
   color: #333333;
+  @include hover;
 }
 
 .header-top__date-item + .header-top__date-item {
